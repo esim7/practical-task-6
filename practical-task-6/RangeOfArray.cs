@@ -15,9 +15,9 @@ namespace practical_task_6
 
         public RangeOfArray(int minIndex, int maxIndex)
         {
-            _minIndex = minIndex;
-            _maxIndex = maxIndex;
-            _size = _maxIndex - _minIndex;
+            MinIndex = minIndex;
+            MaxIndex = maxIndex;
+            _size = maxIndex - minIndex + 1;
             _array = new int[_size];
         }
 
@@ -49,6 +49,7 @@ namespace practical_task_6
                 }
             }
         }
+
         public int this[int i]
         {
             get
